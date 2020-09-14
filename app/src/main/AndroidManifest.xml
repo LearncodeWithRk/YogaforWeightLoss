@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.brandvidiya.yogaforweightloss">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Diet.meals_page" />
+        <activity android:name=".Diet.proteins_page" />
+        <activity android:name=".more.chart_page" />
+        <activity android:name=".more.setting_page" />
+        <activity android:name=".more.feedback_page" />
+        <activity android:name=".more.human_body" />
+        <activity android:name=".joining_from" />
+        <activity android:name=".more.Calculate_page" />
+        <activity android:name=".more.Calendar_page" />
+        <activity android:name=".more.Reminders_page" />
+        <activity android:name=".stopwatch.stop_watch_page" />
+        <activity android:name=".home.Home_page" />
+        <activity android:name=".slider.slider" />
+        <activity android:name=".mainpage.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".more.AlertReceiver" />
+    </application>
+
+</manifest>
